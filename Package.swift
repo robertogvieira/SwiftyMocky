@@ -9,7 +9,7 @@ let package = Package(
    name: "swiftymocky",
    products: [
        .executable(name: "swiftymocky", targets: ["SwiftyMockyCLI"]),
-       .library(name: "SwiftyMocky", targets: ["SwiftyMocky"]),
+       .library(name: "SwiftyMocky", type: .dynamic, targets: ["SwiftyMocky"]),
    ],
    dependencies: [
        .package(url: "https://github.com/JohnSundell/ShellOut.git", from: "2.0.0"),
@@ -53,7 +53,7 @@ let package = Package(
     name: "swiftymocky",
     products: [
         .executable(name: "swiftymocky", targets: ["SwiftyMockyCLI"]),
-        .library(name: "SwiftyMocky", targets: ["SwiftyMocky"]),
+        .library(name: "SwiftyMocky", type: .dynamic, targets: ["SwiftyMocky"]),
     ],
     dependencies: [
        .package(url: "https://github.com/JohnSundell/ShellOut.git", from: "2.0.0"),
